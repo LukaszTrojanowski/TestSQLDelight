@@ -1,0 +1,18 @@
+CREATE TABLE book (
+    _id INTEGER PRIMARY KEY AUTOINCREMENT,
+    isbn INTEGER NOT NULL,
+    title TEXT NOT NULL,
+    cover BLOB,
+    description TEXT
+);
+
+-- selects
+
+selectAll:
+SELECT * FROM book;
+
+-- inserts
+
+insertRow:
+INSERT INTO book(isbn, title, cover, description)
+VALUES (?, ?, ?, ?);

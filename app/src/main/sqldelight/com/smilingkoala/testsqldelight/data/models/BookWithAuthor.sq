@@ -1,0 +1,7 @@
+selectAll:
+SELECT *
+FROM book
+JOIN book_author
+ON book._id = book_author.book_id
+JOIN author
+ON author._id = book_author.author_id;

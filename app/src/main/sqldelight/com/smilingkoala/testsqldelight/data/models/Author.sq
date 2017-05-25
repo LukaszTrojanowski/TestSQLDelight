@@ -1,0 +1,19 @@
+CREATE TABLE author (
+    _id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    birth_date TEXT,
+    death_date TEXT,
+    short_bio TEXT,
+    portrait BLOB
+);
+
+-- select
+
+selectAll:
+SELECT * FROM author;
+
+-- insert
+
+insertRow:
+INSERT INTO author(name, birth_date, death_date, short_bio, portrait)
+VALUES(?, ?, ?, ?, ?);
